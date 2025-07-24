@@ -653,6 +653,10 @@ video {
   src: url(/public/font/dana\ thin.woff) format('woff');
 }
 
+.flex {
+  display: flex;
+}
+
 .h-screen {
   height: 100vh;
 }
@@ -661,12 +665,40 @@ video {
   height: 100%;
 }
 
+.h-10 {
+  height: 2.5rem;
+}
+
+.h-16 {
+  height: 4rem;
+}
+
+.h-14 {
+  height: 3.5rem;
+}
+
 .w-full {
   width: 100%;
 }
 
+.items-center {
+  align-items: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.gap-10 {
+  gap: 2.5rem;
+}
+
 .overflow-hidden {
   overflow: hidden;
+}
+
+.rounded-lg {
+  border-radius: 0.5rem;
 }
 
 .bg-red-500 {
@@ -679,7 +711,105 @@ video {
   background-color: rgb(248 113 113 / var(--tw-bg-opacity, 1));
 }
 
+.bg-lightBgSection {
+  --tw-bg-opacity: 1;
+  background-color: rgb(50 57 70 / var(--tw-bg-opacity, 1));
+}
+
+.p-8 {
+  padding: 2rem;
+}
+
+.p-10 {
+  padding: 2.5rem;
+}
+
+.py-5 {
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+}
+
+.py-10 {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+.py-8 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.py-7 {
+  padding-top: 1.75rem;
+  padding-bottom: 1.75rem;
+}
+
+.px-5 {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
+.px-7 {
+  padding-left: 1.75rem;
+  padding-right: 1.75rem;
+}
+
+.font-danaBold {
+  font-family: dana bold, sans-serif;
+}
+
+.font-danaMedium {
+  font-family: dana medium, sans-serif;
+}
+
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
 .text-customeWhite {
   --tw-text-opacity: 1;
   color: rgb(229 231 235 / var(--tw-text-opacity, 1));
+}
+
+.text-darkBgSection {
+  --tw-text-opacity: 1;
+  color: rgb(31 36 45 / var(--tw-text-opacity, 1));
+}
+
+.text-themColor {
+  --tw-text-opacity: 1;
+  color: rgb(0 238 255 / var(--tw-text-opacity, 1));
+}
+
+.hover\:cursor-pointer:hover {
+  cursor: pointer;
+}
+
+.hover\:text-themColor:hover {
+  --tw-text-opacity: 1;
+  color: rgb(0 238 255 / var(--tw-text-opacity, 1));
+}
+
+.hover\:text-customeWhite:hover {
+  --tw-text-opacity: 1;
+  color: rgb(229 231 235 / var(--tw-text-opacity, 1));
+}
+
+.child-hover\:cursor-pointer > *:hover {
+  cursor: pointer;
+}
+
+.child-hover\:text-themColor > *:hover {
+  --tw-text-opacity: 1;
+  color: rgb(0 238 255 / var(--tw-text-opacity, 1));
 }
