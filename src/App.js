@@ -1,12 +1,12 @@
 import { Routes , Route } from "react-router-dom";
 // import component
-import HomeSection from "./Component/HomeSection/HomeSection";
+import HomePage from "./Component/HomePage/HomePage";
 
 function App() {
   return (
     <>
       <Routes>
-        <Route path="/" element={<HomeSection />} />
+        <Route path="/" element={<HomePage />} />
       </Routes>
     </>
   );

@@ -1,16 +1,18 @@
 // import component
 import Section from "../Section/Section"
 
-const HomeSection = () => {
+const HomePage = () => {
 
     const darkBgSection = '#1f242d'
     const lightBgSection = '#323946'
 
     return(
         <>
-            <Section bgColor={darkBgSection} />
+            <Section bgColor={darkBgSection}> 
+                
+            </Section>
         </>
     )
 }
 
-export default HomeSection
+export default HomePage
