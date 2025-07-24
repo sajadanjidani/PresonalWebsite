@@ -20,6 +20,12 @@ module.exports = {
         danaRegular : ["dana regular","sans-serif"],
         danaThin : ["dana thin","sans-serif"],
       },
+      colors : {
+        darkBgSection : "#1f242d",
+        lightBgSection : "#323946",
+        themColor : "#00eeff",
+        customeWhite : "#e5e7eb"
+      },
       animation: {
         Skills90 : "Skills90 5s ease",
         Skills80 : "Skills80 5s ease",
