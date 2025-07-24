@@ -1,5 +1,6 @@
 // import component
 import Section from "../Section/Section"
+import HomeSection from "../HomeSection/HomeSection"
 
 const HomePage = () => {
 
@@ -9,7 +10,9 @@ const HomePage = () => {
     return(
         <>
             <Section bgColor={darkBgSection}> 
-                
+                <HomeSection> 
+                    
+                </HomeSection>
             </Section>
         </>
     )
