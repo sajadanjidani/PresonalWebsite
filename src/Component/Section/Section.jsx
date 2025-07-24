@@ -1,7 +1,7 @@
-const Section = () => {
+const Section = ({children , bgColor}) => {
     return(
-        <div>
-
+        <div className="h-screen text-customeWhite overflow-hidden" style={{backgroundColor : bgColor}}>
+            {children}
         </div>
     )
 }
