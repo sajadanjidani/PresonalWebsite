@@ -2,8 +2,20 @@
 module.exports = {
   content: ['./src/**/*.jsx'],
   theme: {
-    extend: {},
+    extend: {
+      container : {
+        center : true,
+        screens : {
+          DEFAULT : '100%',
+        },
+      },
+    },
   },
-  plugins: [],
+  plugins: [
+    function ({ addVariant }) {
+      addVariant("child", "& > *");
+      addVariant("child-hover", "& > *:hover");
+    },
+  ],
 }
 
