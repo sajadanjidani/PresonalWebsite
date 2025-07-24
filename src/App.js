@@ -1,8 +1,13 @@
+import { Routes , Route } from "react-router-dom";
+// import component
+
 function App() {
   return (
-    <div className="App">
-      
-    </div>
+    <>
+      <Routes>
+        <Route path="/" element={<HomeSection />} />
+      </Routes>
+    </>
   );
 }
 
