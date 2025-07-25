@@ -16,6 +16,7 @@ import ServicesSection from "../ServicesSection/ServicesSection"
 import ServiceItem from "../ServicesSection/ServiceItem"
 import PortfolioSection from "../PortfolioSection/PortfolioSection";
 import PortfolioItem from "../PortfolioSection/PortfolioItem";
+import FormSection from "../FormSection/FormSection";
 
 const HomePage = () => {
 
@@ -85,6 +86,11 @@ const HomePage = () => {
                         <PortfolioItem key={portfolio.id} title={portfolio.title} imageSrc={portfolio.imageSrc} status={portfolio.stutus}/>
                     ))}
                 </PortfolioSection>
+            </Section>
+            {/* Contact Section */}
+            <Section bgColor={lightBgSection}> 
+                <TitleSection Title='ارتباط با' bgColor={darkBgSection} />
+                <FormSection />
             </Section>
         </>
     )
