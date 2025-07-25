@@ -5,7 +5,7 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 
 const HomeSection = ({children}) => {
     return(
-        <div className="w-full h-full py-4 md:py-7 px-3 md:px-10">
+        <div className="w-full h-full py-4 md:py-7 md:px-10">
             {children}
             <div className="grid md:grid-cols-2 w-[96%] h-[90%] md:mt-4 mx-auto">
                 {/* contentbox */}
