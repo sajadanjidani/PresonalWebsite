@@ -2,6 +2,7 @@
 import Section from "../Section/Section"
 import HomeSection from "../HomeSection/HomeSection"
 import NavbarSection from "../NavbarSection/NavbarSection"
+import TitleSection from "../TitleSection/TitleSection"
 
 const HomePage = () => {
 
@@ -16,7 +17,7 @@ const HomePage = () => {
                 </HomeSection>
             </Section>
             <Section bgColor={lightBgSection}> 
-                
+                <TitleSection Title='درباره' bgColor={darkBgSection} />
             </Section>
         </>
     )
