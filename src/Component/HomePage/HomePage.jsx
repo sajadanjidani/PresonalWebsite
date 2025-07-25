@@ -13,6 +13,7 @@ import SkillSection from "../SkillSection/SkillSection"
 import SkillItem from "../SkillSection/SkillItem"
 import ServicesSection from "../ServicesSection/ServicesSection"
 import ServiceItem from "../ServicesSection/ServiceItem"
+import PortfolioSection from "../PortfolioSection/PortfolioSection";
 
 const HomePage = () => {
 
@@ -36,15 +37,18 @@ const HomePage = () => {
 
     return(
         <>
+            {/* Home Section */}
             <Section bgColor={darkBgSection}> 
                 <HomeSection> 
                     <NavbarSection />
                 </HomeSection>
             </Section>
+            {/* About Me */}
             <Section bgColor={lightBgSection}> 
                 <TitleSection Title='درباره' bgColor={darkBgSection} />
                 <AboutSection />
             </Section>
+            {/* Skills Section */}
             <Section bgColor={darkBgSection}> 
                 <TitleSection Title='مهارت' bgColor={lightBgSection} />
                 <SkillSection>
@@ -53,6 +57,7 @@ const HomePage = () => {
                     ))}
                 </SkillSection>
             </Section>
+            {/* Services Section */}
             <Section bgColor={lightBgSection}> 
                 <TitleSection Title='خدمات' bgColor={darkBgSection} />
                 <ServicesSection> 
@@ -60,6 +65,11 @@ const HomePage = () => {
                         <ServiceItem key={service.id} title={service.title} description={service.description} icon={service.icon} />
                     ))}
                 </ServicesSection>
+            </Section>
+            {/* Portfolio Section */}
+            <Section bgColor={darkBgSection}> 
+                <TitleSection Title='نمونه کارهای' bgColor={lightBgSection} />
+                <PortfolioSection />
             </Section>
         </>
     )
