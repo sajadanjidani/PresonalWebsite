@@ -14,6 +14,7 @@ import SkillItem from "../SkillSection/SkillItem"
 import ServicesSection from "../ServicesSection/ServicesSection"
 import ServiceItem from "../ServicesSection/ServiceItem"
 import PortfolioSection from "../PortfolioSection/PortfolioSection";
+import PortfolioItem from "../PortfolioSection/PortfolioItem";
 
 const HomePage = () => {
 
@@ -69,7 +70,9 @@ const HomePage = () => {
             {/* Portfolio Section */}
             <Section bgColor={darkBgSection}> 
                 <TitleSection Title='نمونه کارهای' bgColor={lightBgSection} />
-                <PortfolioSection />
+                <PortfolioSection>
+                    <PortfolioItem />
+                </PortfolioSection>
             </Section>
         </>
     )
