@@ -17,6 +17,7 @@ import ServiceItem from "../ServicesSection/ServiceItem"
 import PortfolioSection from "../PortfolioSection/PortfolioSection";
 import PortfolioItem from "../PortfolioSection/PortfolioItem";
 import FormSection from "../FormSection/FormSection";
+import FooterSection from "../FooterSection/FooterSection";
 
 const HomePage = () => {
 
@@ -93,6 +94,7 @@ const HomePage = () => {
                 <FormSection />
             </Section>
             {/* Footer */}
+            <FooterSection />
         </>
     )
 }

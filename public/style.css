@@ -802,6 +802,11 @@ video {
   height: 2.5rem;
 }
 
+.size-8 {
+  width: 2rem;
+  height: 2rem;
+}
+
 .h-14 {
   height: 3.5rem;
 }
@@ -890,6 +895,10 @@ video {
   height: 9rem;
 }
 
+.h-96 {
+  height: 24rem;
+}
+
 .w-2\/5 {
   width: 40%;
 }
@@ -954,6 +963,18 @@ video {
   width: 95%;
 }
 
+.w-\[60\%\] {
+  width: 60%;
+}
+
+.w-\[40\%\] {
+  width: 40%;
+}
+
+.w-\[30\%\] {
+  width: 30%;
+}
+
 .cursor-pointer {
   cursor: pointer;
 }
@@ -968,6 +989,10 @@ video {
 
 .grid-cols-2 {
   grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.grid-cols-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
 .grid-rows-2 {
@@ -1020,6 +1045,14 @@ video {
 
 .gap-20 {
   gap: 5rem;
+}
+
+.gap-10 {
+  gap: 2.5rem;
+}
+
+.gap-1 {
+  gap: 0.25rem;
 }
 
 .self-start {
@@ -1224,6 +1257,11 @@ video {
   line-height: 1rem;
 }
 
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
 .font-bold {
   font-weight: 700;
 }
@@ -1333,6 +1371,10 @@ video {
   height: 5rem;
 }
 
+.child\:text-center > * {
+  text-align: center;
+}
+
 .child\:text-lg > * {
   font-size: 1.125rem;
   line-height: 1.75rem;
@@ -1341,6 +1383,11 @@ video {
 .child\:text-lightBgSection > * {
   --tw-text-opacity: 1;
   color: rgb(50 57 70 / var(--tw-text-opacity, 1));
+}
+
+.child\:text-customeWhite > * {
+  --tw-text-opacity: 1;
+  color: rgb(229 231 235 / var(--tw-text-opacity, 1));
 }
 
 .child-hover\:cursor-pointer > *:hover {
@@ -1441,6 +1488,10 @@ video {
 
   .md\:h-36 {
     height: 9rem;
+  }
+
+  .md\:h-80 {
+    height: 20rem;
   }
 
   .md\:w-24 {
