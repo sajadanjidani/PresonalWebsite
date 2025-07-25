@@ -15,6 +15,9 @@ const HomePage = () => {
                     <NavbarSection />
                 </HomeSection>
             </Section>
+            <Section bgColor={lightBgSection}> 
+                
+            </Section>
         </>
     )
 }
