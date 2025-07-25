@@ -92,6 +92,7 @@ const HomePage = () => {
                 <TitleSection Title='ارتباط با' bgColor={darkBgSection} />
                 <FormSection />
             </Section>
+            {/* Footer */}
         </>
     )
 }
