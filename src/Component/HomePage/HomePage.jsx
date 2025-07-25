@@ -21,6 +21,10 @@ const HomePage = () => {
                 <TitleSection Title='درباره' bgColor={darkBgSection} />
                 <AboutSection />
             </Section>
+            <Section bgColor={darkBgSection}> 
+                <TitleSection Title='مهارت' bgColor={lightBgSection} />
+                
+            </Section>
         </>
     )
 }
