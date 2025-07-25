@@ -749,6 +749,11 @@ video {
   margin-bottom: 4rem;
 }
 
+.my-4 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
 .mt-2 {
   margin-top: 0.5rem;
 }
@@ -999,6 +1004,10 @@ video {
 
 .h-24 {
   height: 6rem;
+}
+
+.h-\[94\%\] {
+  height: 94%;
 }
 
 .w-2\/5 {
@@ -1290,6 +1299,10 @@ video {
 
 .p-10 {
   padding: 2.5rem;
+}
+
+.p-5 {
+  padding: 1.25rem;
 }
 
 .px-3 {

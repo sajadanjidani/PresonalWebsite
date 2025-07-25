@@ -8,6 +8,7 @@ import AboutSection from "../AboutSection/AboutSection"
 import SkillSection from "../SkillSection/SkillSection"
 import SkillItem from "../SkillSection/SkillItem"
 import ServicesSection from "../ServicesSection/ServicesSection"
+import ServiceItem from "../ServicesSection/ServiceItem"
 
 const HomePage = () => {
 
@@ -44,7 +45,11 @@ const HomePage = () => {
             </Section>
             <Section bgColor={lightBgSection}> 
                 <TitleSection Title='خدمات' bgColor={darkBgSection} />
-                <ServicesSection />
+                <ServicesSection> 
+                    <ServiceItem />
+                    <ServiceItem />
+                    <ServiceItem />
+                </ServicesSection>
             </Section>
         </>
     )
