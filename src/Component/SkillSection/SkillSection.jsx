@@ -1,6 +1,6 @@
 const SkillSection = ({children}) => {
     return(
-        <div className="grid grid-cols-2 grid-rows-3 w-[94%] h-[60%] mt-10 mx-auto">
+        <div className="grid md:grid-cols-2 md:grid-rows-3 md:gap-20 w-[90%] h-[60%] mt-10 md:mt-20 mx-auto">
             {children}
         </div>
     )

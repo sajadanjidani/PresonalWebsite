@@ -26,7 +26,7 @@ const NavbarSection = () => {
 
             {/* menu mobile */}
             {menuStatus ? (
-                <div className='absolute w-full h-full top-0 right-0'>
+                <div className='fixed w-full h-full top-0 right-0'>
                     <div className='absolute w-3/5 h-full top-0 right-0 py-8 px-7 bg-darkBgSection'>
                         <ul className="grid gap-5 text-customeWhite child-hover:cursor-pointer child-hover:text-themColor child:text-lg">
                             <li>خانه</li>

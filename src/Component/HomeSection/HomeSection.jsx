@@ -9,8 +9,8 @@ const HomeSection = ({children}) => {
             {children}
             <div className="grid md:grid-cols-2 w-[96%] h-[90%] md:mt-4 mx-auto">
                 {/* contentbox */}
-                <div className='flex flex-col justify-center items-center text-center md:text-right md:items-start gap-2 md:mr-5'>
-                    <p className='text-xl'>سلام من <br/>
+                <div className='flex flex-col justify-center items-center mt-10 md:mt-0 text-center md:text-right md:items-start gap-2 md:mr-5'>
+                    <p className='text-xl leading-10 md:leading-8 '>سلام من <br/>
                     سجاد انجیدنی هستم</p>
                     <h3 className='text-2xl text-themColor'>برنامه نویس فرانت اند</h3>
                     <div className='flex gap-9 mt-2'>
@@ -22,7 +22,7 @@ const HomeSection = ({children}) => {
                     <a href='/#' className='inline text-center w-72 py-2 mt-3 border-2 rounded-lg text-themColor border-themColor hover:text-darkBgSection hover:bg-themColor'>درخواست همکاری</a>
                 </div>
                 {/* imagebox */}
-                <div className='grid justify-center items-center'>
+                <div className='grid justify-center items-center my-16 md:my-0'>
                     <div className='flex justify-center items-center w-96 h-9w-96 rounded-full bg-lightBgSection'>
                         <div className='w-80 h-80  rounded-full overflow-hidden bg-themColor'>
                             <img alt='me' src='/image/myPic/exampleMe.png'/>
