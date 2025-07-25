@@ -4,6 +4,7 @@ import HomeSection from "../HomeSection/HomeSection"
 import NavbarSection from "../NavbarSection/NavbarSection"
 import TitleSection from "../TitleSection/TitleSection"
 import AboutSection from "../AboutSection/AboutSection"
+import SkillSection from "../SkillSection/SkillSection"
 
 const HomePage = () => {
 
@@ -23,7 +24,9 @@ const HomePage = () => {
             </Section>
             <Section bgColor={darkBgSection}> 
                 <TitleSection Title='مهارت' bgColor={lightBgSection} />
-                
+                <SkillSection>
+                    
+                </SkillSection>
             </Section>
         </>
     )
