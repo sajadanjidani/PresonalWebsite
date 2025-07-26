@@ -27,7 +27,7 @@ const FooterSection = () => {
                 </ul>
                 <ul className='grid md:flex mt-10 justify-center gap-5 md:gap-10 child:text-customeWhite child-hover:text-themColor'>
                     <li dir='ltr' className='flex gap-1 cursor-pointer'><FiPhone /> +98 993 689 3100</li>
-                    <li dir='rtl' className='flex gap-1 cursor-pointer'><MdOutlineMail />SajadAnjiidanii@gmail.com</li>
+                    <li className='flex gap-1 cursor-pointer rtl md:ltr'><MdOutlineMail />SajadAnjiidanii@gmail.com</li>
                 </ul>
             </div>
         </div>

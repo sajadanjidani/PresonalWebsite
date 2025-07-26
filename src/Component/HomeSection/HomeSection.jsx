@@ -7,7 +7,7 @@ const HomeSection = ({children}) => {
     return(
         <div className="w-full h-full py-4 md:py-7 md:px-10">
             {children}
-            <div className="grid md:grid-cols-2 w-[96%] h-[90%] md:mt-4 mx-auto">
+            <div className="grid md:grid-cols-2 w-[96%] h-[90%] md:mt-4 mx-auto" style={{margin : 0}}>
                 {/* contentbox */}
                 <div className='flex flex-col justify-center items-center mt-10 md:mt-0 text-center md:text-right md:items-start gap-2 md:mr-5'>
                     <p className='text-xl leading-10 md:leading-8 '>سلام من <br/>
@@ -22,8 +22,8 @@ const HomeSection = ({children}) => {
                     <a href='/#' className='inline text-center w-72 py-2 mt-3 border-2 rounded-lg text-themColor border-themColor hover:text-darkBgSection hover:bg-themColor'>درخواست همکاری</a>
                 </div>
                 {/* imagebox */}
-                <div className='grid justify-center items-center my-16 md:my-0'>
-                    <div className='flex justify-center items-center w-96 h-9w-96 rounded-full bg-lightBgSection'>
+                <div className='grid justify-center items-center my-16 md:pt-10 lg:pt-0 md:my-0'>
+                    <div className='flex justify-center items-center w-96 rounded-full bg-lightBgSection'>
                         <div className='w-80 h-80  rounded-full overflow-hidden bg-themColor'>
                             <img alt='me' src='/image/myPic/exampleMe.png'/>
                         </div>
