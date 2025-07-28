@@ -1,3 +1,5 @@
+import { motion } from "framer-motion";
+
 const SkillItem = ({imageSrc , skillName , skillPersent , customeClass}) => {
     return(
         <>
@@ -10,7 +12,16 @@ const SkillItem = ({imageSrc , skillName , skillPersent , customeClass}) => {
                 <div className="grid w-[75%] md:w-[75%] py-9">
                     <span className="mr-3">{skillName}</span>
                     <div className="relative flex items-center w-full h-4 rounded-full overflow-hidden bg-lightBgSection">
+                    <motion.div
+                        className={`h-full bg-themColor ${customeClass}`}
+                        style={{ width: skillPersent }}
+                        initial={{ width: 0 }}
+                        whileInView={{ width: skillPersent }}
+                        transition={{ duration: 1 }}
+                        viewport={{ once: true, amount: 0.6 }}
+                        >
                         <div className={`h-full bg-themColor ${customeClass}`} style={{width : skillPersent}}></div>
+                        </motion.div>
                         <span className="absolute left-2 text-xs">{skillPersent}</span>
                     </div>
                 </div>
