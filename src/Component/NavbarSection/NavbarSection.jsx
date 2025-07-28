@@ -11,7 +11,7 @@ const NavbarSection = () => {
     }
 
     return(
-        <div className="flex items-center justify-between w-[94%] mx-auto md:w-full h-14 px-7 rounded-lg bg-lightBgSection">
+        <div className="flex items-center justify-between w-[94%] mx-auto md:w-full h-14 px-7 rounded-lg bg-lightBgSection animate-utb">
             <span className="text-2xl font-bold text-darkBgSection hover:cursor-pointer hover:text-themColor">TC</span>
             <ul className="hidden md:flex md:gap-9 lg:gap-12 font-danaMedium text-customeWhite child-hover:cursor-pointer child-hover:text-themColor">
                 <li>خانه</li>

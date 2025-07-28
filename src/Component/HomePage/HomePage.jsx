@@ -25,12 +25,12 @@ const HomePage = () => {
     const lightBgSection = '#323946'
 
     const [skillInfo , setSkillInfo] = useState([
-        {id : 1 , imageSrc : '/image/mySkills/htmlImage.svg', skillName : 'HTML', skillPersent : "90%"},
-        {id : 2 , imageSrc : '/image/mySkills/cssImage.svg', skillName : 'CSS', skillPersent : "90%"},
-        {id : 3 , imageSrc : '/image/mySkills/jsImage.svg', skillName : 'JS', skillPersent : "80%"},
-        {id : 4 , imageSrc : '/image/mySkills/React.png', skillName : 'React', skillPersent : "80%"},
-        {id : 5 , imageSrc : '/image/mySkills/tailwindImage.svg', skillName : 'Tailwind', skillPersent : "75%"},
-        {id : 6 , imageSrc : '/image/mySkills/bootstrap.png', skillName : 'Bootstrap', skillPersent : "70%"},
+        {id : 1 , imageSrc : '/image/mySkills/htmlImage.svg', skillName : 'HTML', skillPersent : "90%", customeClass : 'animate-Skills90'},
+        {id : 2 , imageSrc : '/image/mySkills/cssImage.svg', skillName : 'CSS', skillPersent : "80%", customeClass : 'animate-Skills80'},
+        {id : 3 , imageSrc : '/image/mySkills/jsImage.svg', skillName : 'JS', skillPersent : "80%", customeClass : 'animate-Skills80'},
+        {id : 4 , imageSrc : '/image/mySkills/React.png', skillName : 'React', skillPersent : "80%", customeClass : 'animate-Skills80'},
+        {id : 5 , imageSrc : '/image/mySkills/tailwindImage.svg', skillName : 'Tailwind', skillPersent : "75%", customeClass : 'animate-Skills75'},
+        {id : 6 , imageSrc : '/image/mySkills/bootstrap.png', skillName : 'Bootstrap', skillPersent : "70%", customeClass : 'animate-Skills70'},
     ])
 
     const [serviceInfo , setServiceInfo] = useState([
@@ -40,12 +40,12 @@ const HomePage = () => {
     ])
 
     const [portfolioInfo , setPortfolioInfo] = useState([
-        {id : 1 , title : 'GreenWeb' , imageSrc : '/image/myPortfolio/greenweb.jpg' , stutus : true},
-        {id : 2 , title : 'GreenWeb' , imageSrc : '/image/myPortfolio/greenweb.jpg' , stutus : false},
-        {id : 3 , title : 'GreenWeb' , imageSrc : '/image/myPortfolio/greenweb.jpg' , stutus : false},
-        {id : 4 , title : 'GreenWeb' , imageSrc : '/image/myPortfolio/greenweb.jpg' , stutus : false},
-        {id : 5 , title : 'GreenWeb' , imageSrc : '/image/myPortfolio/greenweb.jpg' , stutus : false},
-        {id : 6 , title : 'GreenWeb' , imageSrc : '/image/myPortfolio/greenweb.jpg' , stutus : false},
+        {id : 1 , title : 'GreenWeb' , imageSrc : '/image/myPortfolio/greenweb.jpg' , customeClass : 'animate-rtl' , stutus : true},
+        {id : 2 , title : 'GreenWeb' , imageSrc : '/image/myPortfolio/greenweb.jpg' , customeClass : 'animate-utb' , stutus : false},
+        {id : 3 , title : 'GreenWeb' , imageSrc : '/image/myPortfolio/greenweb.jpg' , customeClass : 'animate-ltr' , stutus : false},
+        {id : 4 , title : 'GreenWeb' , imageSrc : '/image/myPortfolio/greenweb.jpg' , customeClass : 'animate-rtl' , stutus : false},
+        {id : 5 , title : 'GreenWeb' , imageSrc : '/image/myPortfolio/greenweb.jpg' , customeClass : 'animate-btu' , stutus : false},
+        {id : 6 , title : 'GreenWeb' , imageSrc : '/image/myPortfolio/greenweb.jpg' , customeClass : 'animate-ltr' , stutus : false},
     ])
 
     return(
@@ -66,7 +66,7 @@ const HomePage = () => {
                 <TitleSection Title='مهارت' bgColor={lightBgSection} />
                 <SkillSection>
                     {skillInfo.map((skill) => (
-                        <SkillItem key={skill.id} skillName={skill.skillName} skillPersent={skill.skillPersent} imageSrc={skill.imageSrc}/>
+                        <SkillItem key={skill.id} skillName={skill.skillName} skillPersent={skill.skillPersent} imageSrc={skill.imageSrc} customeClass={skill.customeClass}/>
                     ))}
                 </SkillSection>
             </Section>
@@ -84,7 +84,7 @@ const HomePage = () => {
                 <TitleSection Title='نمونه کارهای' bgColor={lightBgSection} />
                 <PortfolioSection>
                     {portfolioInfo.map((portfolio) => (
-                        <PortfolioItem key={portfolio.id} title={portfolio.title} imageSrc={portfolio.imageSrc} status={portfolio.stutus}/>
+                        <PortfolioItem key={portfolio.id} title={portfolio.title} imageSrc={portfolio.imageSrc} customeClass={portfolio.customeClass} status={portfolio.stutus}/>
                     ))}
                 </PortfolioSection>
             </Section>

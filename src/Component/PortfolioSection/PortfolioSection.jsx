@@ -1,6 +1,6 @@
 const PortfolioSection = ({children}) => {
     return(
-        <div className="w-[90%] h-[65%] pt-5 pb-10 lg:py-0 mt-5 lg:mt-24 mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 grid-rows-6 md:grid-rows-3 lg:grid-rows-2 gap-5">
+        <div className="w-[90%] h-[65%] pt-5 pb-10 lg:py-0 mt-5 lg:mt-24 mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 grid-rows-6 md:grid-rows-3 lg:grid-rows-2 gap-5 overflow-hidden">
             {children}
         </div>
     )
