@@ -20,7 +20,7 @@ const SkillItem = ({imageSrc , skillName , skillPersent , customeClass}) => {
                         transition={{ duration: 1 }}
                         viewport={{ once: true, amount: 0.6 }}
                         >
-                        <div className={`h-full bg-themColor ${customeClass}`} style={{width : skillPersent}}></div>
+                        <div className={`h-full bg-themColor ${customeClass}`} style={{width : 0}}></div>
                         </motion.div>
                         <span className="absolute left-2 text-xs">{skillPersent}</span>
                     </div>

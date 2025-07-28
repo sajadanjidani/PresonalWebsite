@@ -1,15 +1,15 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
 
-const ServiceItem = ({icon , title , description , customeClass}) => {
+const ServiceItem = ({icon , title , description , defualtLoc , customeClass}) => {
     const [isVisible, setIsVisible] = useState(false);
     
     return(
         <motion.div
-      onViewportEnter={() => setIsVisible(true)}
-      viewport={{ once: true, amount: 0.3 }}
-      className={`relative mt-7 lg:mt-0 w-full h-[500px] lg:h-full lg:py-0  px-7 rounded-lg text-lightBgSection bg-darkBgSection child:duration-500 cursor-pointer group ${
-        isVisible ? customeClass : ""
+        onViewportEnter={() => setIsVisible(true)}
+        viewport={{ once: true, amount: 0.3 }}
+        className={`relative mt-7 lg:mt-0 w-full h-[500px] lg:h-full lg:py-0  px-7 rounded-lg text-lightBgSection bg-darkBgSection child:duration-500 cursor-pointer group ${
+        isVisible ? customeClass : 'opacity-0' 
       }`}
     >
         {/* iconbox */}

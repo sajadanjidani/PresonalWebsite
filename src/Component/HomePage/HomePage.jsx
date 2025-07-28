@@ -75,7 +75,7 @@ const HomePage = () => {
                 <TitleSection Title='خدمات' bgColor={darkBgSection} />
                 <ServicesSection> 
                     {serviceInfo.map((service) => (
-                        <ServiceItem key={service.id} title={service.title} description={service.description} icon={service.icon} customeClass={service.customeClass} />
+                        <ServiceItem key={service.id} title={service.title} description={service.description} icon={service.icon} customeClass={service.customeClass} defualtLoc={service.defualtLoc} />
                     ))}
                 </ServicesSection>
             </Section>

@@ -10,7 +10,7 @@ const PortfolioItem = ({ imageSrc, title, customeClass, status }) => {
       onViewportEnter={() => setIsVisible(true)}
       viewport={{ once: true, amount: 0.3 }}
       className={`relative w-full h-52 md:h-32 lg:h-full rounded-xl bg-lightBgSection cursor-pointer overflow-hidden group font-danaRegular ${
-        isVisible ? customeClass : ""
+        isVisible ? customeClass : "opacity-0"
       }`}
     >
       {status ? (

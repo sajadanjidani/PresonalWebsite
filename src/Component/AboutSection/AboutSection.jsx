@@ -10,7 +10,7 @@ const AboutSection = () => {
   const cleanedText = fullText.replace(/\[BR\]/g, "\n");
 
   const [visibleLength, setVisibleLength] = useState(0);
-  const { ref, inView } = useInView({ threshold: 0.4, triggerOnce: true });
+  const { ref, inView } = useInView({ threshold: 0.1, triggerOnce: true });
 
   useEffect(() => {
     let timer;
