@@ -12,8 +12,8 @@ const NavbarSection = () => {
 
     return(
         <div className="flex items-center justify-between w-[94%] mx-auto md:w-full h-14 px-7 rounded-lg bg-lightBgSection animate-utb">
-            <span className="text-2xl font-bold text-darkBgSection hover:cursor-pointer hover:text-themColor">TC</span>
-            <ul className="hidden md:flex md:gap-9 lg:gap-12 font-danaMedium text-customeWhite child-hover:cursor-pointer child-hover:text-themColor">
+            <span className="text-2xl font-bold text-darkBgSection hover:cursor-pointer hover:text-themColor duration-500">TC</span>
+            <ul className="hidden md:flex md:gap-9 lg:gap-12 font-danaMedium text-customeWhite child-hover:cursor-pointer child-hover:text-themColor child:duration-500">
                 <li>خانه</li>
                 <li>درباره من</li>
                 <li>مهارت</li>
@@ -21,14 +21,14 @@ const NavbarSection = () => {
                 <li>نمونه کار</li>
                 <li>ارتباط</li>
             </ul>
-            <button className="hidden md:block text-themColor hover:text-customeWhite">درخواست همکاری</button>
+            <button className="hidden md:block text-themColor hover:text-customeWhite duration-500">درخواست همکاری</button>
             <button onClick={() => toggleMenu()} className='md:hidden hover:text-themColor'><MenuIcon /></button>
 
             {/* menu mobile */}
             {menuStatus ? (
                 <div className='fixed w-full h-full top-0 right-0'>
                     <div className='absolute w-3/5 h-full top-0 right-0 py-8 px-7 bg-darkBgSection'>
-                        <ul className="grid gap-5 text-customeWhite child-hover:cursor-pointer child-hover:text-themColor child:text-lg">
+                        <ul className="grid gap-5 text-customeWhite child-hover:cursor-pointer child-hover:text-themColor child:text-lg child:duration-500">
                             <li>خانه</li>
                             <li>مهارت</li>
                             <li>ارتباط</li>

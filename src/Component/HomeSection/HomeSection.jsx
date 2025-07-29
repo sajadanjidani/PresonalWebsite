@@ -14,12 +14,12 @@ const HomeSection = ({children}) => {
                     سجاد انجیدنی هستم</p>
                     <h3 className='text-2xl text-themColor'>برنامه نویس فرانت اند</h3>
                     <div className='flex gap-9 mt-2'>
-                        <TelegramIcon className='text-themColor hover:text-customeWhite hover:cursor-pointer' style={{width : '40px' , height : '40px'}}/>
-                        <InstagramIcon className='text-themColor hover:text-customeWhite hover:cursor-pointer' style={{width : '40px' , height : '40px'}}/>
-                        <WhatsAppIcon className='text-themColor hover:text-customeWhite hover:cursor-pointer' style={{width : '40px' , height : '40px'}}/>
-                        <LinkedInIcon className='text-themColor hover:text-customeWhite hover:cursor-pointer' style={{width : '40px' , height : '40px'}}/>
+                        <TelegramIcon className='text-themColor hover:text-customeWhite hover:cursor-pointer child:duration-500' style={{width : '40px' , height : '40px'}}/>
+                        <InstagramIcon className='text-themColor hover:text-customeWhite hover:cursor-pointer child:duration-500' style={{width : '40px' , height : '40px'}}/>
+                        <WhatsAppIcon className='text-themColor hover:text-customeWhite hover:cursor-pointer child:duration-500' style={{width : '40px' , height : '40px'}}/>
+                        <LinkedInIcon className='text-themColor hover:text-customeWhite hover:cursor-pointer child:duration-500' style={{width : '40px' , height : '40px'}}/>
                     </div>
-                    <a href='/#' className='inline text-center w-72 py-2 mt-3 border-2 rounded-lg text-themColor border-themColor hover:text-darkBgSection hover:bg-themColor'>درخواست همکاری</a>
+                    <a href='/#' className='inline text-center w-72 py-2 mt-3 border-2 rounded-lg text-themColor border-themColor hover:text-darkBgSection hover:bg-themColor duration-500'>درخواست همکاری</a>
                 </div>
                 {/* imagebox */}
                 <div className='grid justify-center items-center my-16 md:pt-10 lg:pt-0 md:my-0 animate-btu'>
