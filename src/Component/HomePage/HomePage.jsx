@@ -89,7 +89,7 @@ const HomePage = () => {
                 </PortfolioSection>
             </Section>
             {/* Contact Section */}
-            <Section bgColor={lightBgSection}> 
+            <Section bgColor={lightBgSection} custome='auto'> 
                 <TitleSection Title='ارتباط با' bgColor={darkBgSection} />
                 <FormSection />
             </Section>
