@@ -51,18 +51,18 @@ const HomePage = () => {
     return(
         <>
             {/* Home Section */}
-            <Section bgColor={darkBgSection}> 
+            <Section id='Home' bgColor={darkBgSection}> 
                 <HomeSection> 
                     <NavbarSection />
                 </HomeSection>
             </Section>
             {/* About Me */}
-            <Section bgColor={lightBgSection}> 
+            <Section id='AboutMe' bgColor={lightBgSection}> 
                 <TitleSection Title='درباره' bgColor={darkBgSection} />
                 <AboutSection />
             </Section>
             {/* Skills Section */}
-            <Section bgColor={darkBgSection}> 
+            <Section id='Skills' bgColor={darkBgSection}> 
                 <TitleSection Title='مهارت' bgColor={lightBgSection} />
                 <SkillSection>
                     {skillInfo.map((skill) => (
@@ -71,7 +71,7 @@ const HomePage = () => {
                 </SkillSection>
             </Section>
             {/* Services Section */}
-            <Section bgColor={lightBgSection}> 
+            <Section id='Services' bgColor={lightBgSection}> 
                 <TitleSection Title='خدمات' bgColor={darkBgSection} />
                 <ServicesSection> 
                     {serviceInfo.map((service) => (
@@ -80,7 +80,7 @@ const HomePage = () => {
                 </ServicesSection>
             </Section>
             {/* Portfolio Section */}
-            <Section bgColor={darkBgSection}> 
+            <Section id='Portfolio' bgColor={darkBgSection}> 
                 <TitleSection Title='نمونه کارهای' bgColor={lightBgSection} />
                 <PortfolioSection>
                     {portfolioInfo.map((portfolio) => (
@@ -89,7 +89,7 @@ const HomePage = () => {
                 </PortfolioSection>
             </Section>
             {/* Contact Section */}
-            <Section bgColor={lightBgSection} custome='auto'> 
+            <Section id='Contact' bgColor={lightBgSection} custome='auto'> 
                 <TitleSection Title='ارتباط با' bgColor={darkBgSection} />
                 <FormSection />
             </Section>
