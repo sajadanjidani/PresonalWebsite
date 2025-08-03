@@ -3,6 +3,7 @@ import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
 import { useState } from "react";
 import emailjs from '@emailjs/browser';
+import { subjectForm } from './../../data'
 
 emailjs.init({
   publicKey: "dwVq7RzU_pdTaBzeP",
@@ -40,7 +41,7 @@ const FormSection = () => {
   const [formValid, setFormValid] = useState(false);
   const [firstName, setFirstName] = useState('');
   const [lastName, setLastName] = useState('');
-  const [subject, setSubject] = useState('');
+  const [subject, setSubject] = useState(subjectForm);
   const [phoneNumber, setPhoneNumber] = useState('');
   const [emailAddress, setEmailAddress] = useState('');
   const [textMessage, setTextMessage] = useState('');
