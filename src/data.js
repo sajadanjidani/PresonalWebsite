@@ -25,11 +25,8 @@ const portfolioInfos = [
     {id : 4 , title : 'GreenWeb' , imageSrc : '/image/myPortfolio/greenweb.jpg' , customeClass : 'animate-rtl' , stutus : false},
     {id : 5 , title : 'GreenWeb' , imageSrc : '/image/myPortfolio/greenweb.jpg' , customeClass : 'animate-btu' , stutus : false},
     {id : 6 , title : 'GreenWeb' , imageSrc : '/image/myPortfolio/greenweb.jpg' , customeClass : 'animate-ltr' , stutus : false},
-
 ]
 
-
-
-const subjectForm = ''
+let subjectForm = ''
 
 export { skillInfos , serviceInfos , portfolioInfos , subjectForm }

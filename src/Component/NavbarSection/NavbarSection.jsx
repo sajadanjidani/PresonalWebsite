@@ -2,13 +2,12 @@ import MenuIcon from '@mui/icons-material/Menu';
 import { useState } from 'react';
 import { Link } from 'react-scroll';
 
-const NavbarSection = () => {
+const NavbarSection = ({setSubjectForm}) => {
 
     const [menuStatus , setMenuStatus] = useState(false)
 
     const toggleMenu = () => {
         setMenuStatus(prveStatus => !prveStatus)
-        console.log(menuStatus)
     }
 
     return(
@@ -22,7 +21,7 @@ const NavbarSection = () => {
                 <li><Link to='Portfolio' smooth={true} duration={1400}>نمونه کار</Link></li>
                 <li><Link to='Contact' smooth={true} duration={1600}>ارتباط</Link></li>
             </ul>
-            <button className="hidden md:block text-themColor hover:text-customeWhite duration-500">درخواست همکاری</button>
+            <button className="hidden md:block text-themColor hover:text-customeWhite duration-500"><Link to='Contact' smooth={true} duration={1600} onClick={() => setSubjectForm('درخواست همکاری')}>درخواست همکاری</Link></button>
             <button onClick={() => toggleMenu()} className='md:hidden hover:text-themColor'><MenuIcon /></button>
 
             {/* menu mobile */}

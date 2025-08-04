@@ -2,8 +2,9 @@ import TelegramIcon from '@mui/icons-material/Telegram';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import { Link } from 'react-scroll';
 
-const HomeSection = ({children}) => {
+const HomeSection = ({children , setSubjectForm}) => {
     return(
         <div className="w-full h-full py-4 md:py-7 md:px-10">
             {children}
@@ -19,7 +20,7 @@ const HomeSection = ({children}) => {
                         <WhatsAppIcon className='text-themColor hover:text-customeWhite hover:cursor-pointer child:duration-500' style={{width : '40px' , height : '40px'}}/>
                         <LinkedInIcon className='text-themColor hover:text-customeWhite hover:cursor-pointer child:duration-500' style={{width : '40px' , height : '40px'}}/>
                     </div>
-                    <a href='/#' className='inline text-center w-72 py-2 mt-3 border-2 rounded-lg text-themColor border-themColor hover:text-darkBgSection hover:bg-themColor duration-500'>درخواست همکاری</a>
+                    <Link onClick={() => setSubjectForm('درخواست همکاری')} className='inline text-center w-72 py-2 mt-3 border-2 cursor-pointer rounded-lg text-themColor border-themColor hover:text-darkBgSection hover:bg-themColor duration-500' to='Contact' smooth={true} duration={1600}>درخواست همکاری</Link>
                 </div>
                 {/* imagebox */}
                 <div className='grid justify-center items-center my-16 md:pt-10 lg:pt-0 md:my-0 animate-btu'>

@@ -1,9 +1,8 @@
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
-import { useState } from "react";
+import { useState , useEffect } from "react";
 import emailjs from '@emailjs/browser';
-import { subjectForm } from './../../data'
 
 emailjs.init({
   publicKey: "dwVq7RzU_pdTaBzeP",
@@ -36,7 +35,7 @@ const schema = yup.object().shape({
     .required("پیام الزامی است"),
 });
 
-const FormSection = () => {
+const FormSection = ({subjectForm}) => {
   const [formSection, setFormSection] = useState(true);
   const [formValid, setFormValid] = useState(false);
   const [firstName, setFirstName] = useState('');
@@ -48,6 +47,10 @@ const FormSection = () => {
   const [userEnterCode, setUserEnterCode] = useState('');
   const [capCode, setCapCode] = useState('');
   const [codeChecked, setCodeChecked] = useState(true);
+
+  useEffect(() => {
+    setSubject(subjectForm);
+  }, [subjectForm]);
 
   const sendCode = () => {
     const code = Math.floor(Math.random() * 10000000);

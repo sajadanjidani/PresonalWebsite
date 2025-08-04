@@ -22,19 +22,17 @@ const HomePage = () => {
 
     const darkBgSection = '#1f242d'
     const lightBgSection = '#323946'
-
     const [skillInfo , setSkillInfo] = useState(skillInfos)
-
     const [serviceInfo , setServiceInfo] = useState(serviceInfos)
-
     const [portfolioInfo , setPortfolioInfo] = useState(portfolioInfos)
+    const [subjectForm, setSubjectForm] = useState('');
 
     return(
         <>
             {/* Home Section */}
             <Section id='Home' bgColor={darkBgSection}> 
-                <HomeSection> 
-                    <NavbarSection />
+                <HomeSection setSubjectForm={setSubjectForm}> 
+                    <NavbarSection setSubjectForm={setSubjectForm}/>
                 </HomeSection>
             </Section>
             {/* About Me */}
@@ -56,7 +54,15 @@ const HomePage = () => {
                 <TitleSection Title='خدمات' bgColor={darkBgSection} />
                 <ServicesSection> 
                     {serviceInfo.map((service) => (
-                        <ServiceItem key={service.id} title={service.title} description={service.description} icon={service.icon} customeClass={service.customeClass} defualtLoc={service.defualtLoc} />
+                        <ServiceItem
+                            key={service.id}
+                            title={service.title}
+                            description={service.description}
+                            icon={service.icon}
+                            customeClass={service.customeClass}
+                            defualtLoc={service.defualtLoc}
+                            setSubjectForm={setSubjectForm}
+                        />
                     ))}
                 </ServicesSection>
             </Section>
@@ -72,7 +78,7 @@ const HomePage = () => {
             {/* Contact Section */}
             <Section id='Contact' bgColor={lightBgSection} custome='auto'> 
                 <TitleSection Title='ارتباط با' bgColor={darkBgSection} />
-                <FormSection />
+                <FormSection setSubjectForm={setSubjectForm} subjectForm={subjectForm} />
             </Section>
             {/* Footer */}
             <FooterSection />
