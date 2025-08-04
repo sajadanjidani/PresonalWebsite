@@ -3,8 +3,8 @@ module.exports = {
   content: ["./src/**/*.jsx"],
   theme: {
     extend: {
-      container: {
-        center: true,
+      container:{
+        "center": true,
         screens: {
           DEFAULT: "100%",
         },

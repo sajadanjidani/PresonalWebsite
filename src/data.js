@@ -19,11 +19,11 @@ const serviceInfos = [
 ]
 
 const portfolioInfos = [
-    {id : 1 , title : 'GreenWeb' , imageSrc : '/image/myPortfolio/greenweb.jpg' , customeClass : 'animate-rtl' , stutus : true},
-    {id : 2 , title : 'GreenWeb' , imageSrc : '/image/myPortfolio/greenweb.jpg' , customeClass : 'animate-utb' , stutus : false},
-    {id : 3 , title : 'GreenWeb' , imageSrc : '/image/myPortfolio/greenweb.jpg' , customeClass : 'animate-ltr' , stutus : false},
-    {id : 4 , title : 'GreenWeb' , imageSrc : '/image/myPortfolio/greenweb.jpg' , customeClass : 'animate-rtl' , stutus : false},
-    {id : 5 , title : 'GreenWeb' , imageSrc : '/image/myPortfolio/greenweb.jpg' , customeClass : 'animate-btu' , stutus : false},
+    {id : 1 , title : 'GreenWeb' , imageSrc : '/image/myPortfolio/greenweb.jpg' , customeClass : 'animate-rtl' , stutus : true , LP : '/video/greenWeb/LP.mp4' , TB : '/video/greenWeb/TB.mp4' , MB : '/video/greenWeb/MB.mp4'},
+    {id : 2 , title : 'NewsPersion' , imageSrc : '/image/myPortfolio/greenweb.jpg' , customeClass : 'animate-utb' , stutus : true , LP : '/video/newsPersion/LP.mp4' , TB : '/video/newsPersion/TB.mp4' , MB : '/video/newsPersion/MB.mp4'},
+    {id : 3 , title : 'TvRepairs' , imageSrc : '/image/myPortfolio/greenweb.jpg' , customeClass : 'animate-ltr' , stutus : true , LP : '/video/tvRepairs/LP.mp4' , TB : '/video/tvRepairs/TB.mp4' , MB : '/video/tvRepairs/MB.mp4'},
+    {id : 4 , title : 'TvRepairs2' , imageSrc : '/image/myPortfolio/greenweb.jpg' , customeClass : 'animate-rtl' , stutus : true , LP : '/video/tvRepairs2/LP.mp4' , TB : '/video/tvRepairs2/TB.mp4' , MB : '/video/tvRepairs2/MB.mp4'},
+    {id : 5 , title : 'technologyShop' , imageSrc : '/image/myPortfolio/greenweb.jpg' , customeClass : 'animate-btu' , stutus : true , LP : '/video/tecnologeyShop/LP.mp4' , TB : '/video/tecnologeyShop/TB.mp4' , MB : '/video/tecnologeyShop/MB.mp4'},
     {id : 6 , title : 'GreenWeb' , imageSrc : '/image/myPortfolio/greenweb.jpg' , customeClass : 'animate-ltr' , stutus : false},
 ]
 
