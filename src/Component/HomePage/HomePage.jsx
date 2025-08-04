@@ -71,7 +71,7 @@ const HomePage = () => {
                 <TitleSection Title='نمونه کارهای' bgColor={lightBgSection} />
                 <PortfolioSection>
                     {portfolioInfo.map((portfolio) => (
-                        <PortfolioItem key={portfolio.id} title={portfolio.title} imageSrc={portfolio.imageSrc} customeClass={portfolio.customeClass} status={portfolio.stutus}/>
+                        <PortfolioItem key={portfolio.id} id={portfolio.id} title={portfolio.title} imageSrc={portfolio.imageSrc} customeClass={portfolio.customeClass} status={portfolio.stutus}/>
                     ))}
                 </PortfolioSection>
             </Section>
