@@ -25,7 +25,7 @@ const NavbarSection = ({setSubjectForm}) => {
 
     return(
         <div className="flex items-center justify-between w-[94%] mx-auto md:w-full h-14 px-7 rounded-lg bg-lightBgSection animate-utb">
-            <span className="text-2xl font-bold text-darkBgSection hover:cursor-pointer hover:text-themColor duration-500">TC</span>
+            <span className="text-2xl font-bold hover:cursor-pointer text-darkBgSection hover:text-themColor duration-500"><Link to='/'>TC</Link></span>
             <ul className="hidden md:flex md:gap-9 lg:gap-12 font-danaMedium text-customeWhite child-hover:cursor-pointer child-hover:text-themColor child:duration-500">
                 <li><Link to='Home' smooth={true} duration={500}>خانه</Link></li>
                 <li><Link to='AboutMe' smooth={true} duration={800}>درباره من</Link></li>

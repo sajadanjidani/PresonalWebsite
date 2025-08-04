@@ -32,7 +32,7 @@ const HomePage = () => {
             {/* Home Section */}
             <Section id='Home' bgColor={darkBgSection}> 
                 <HomeSection setSubjectForm={setSubjectForm}> 
-                    <NavbarSection setSubjectForm={setSubjectForm}/>
+                    <NavbarSection logoColor={darkBgSection} setSubjectForm={setSubjectForm}/>
                 </HomeSection>
             </Section>
             {/* About Me */}
@@ -81,7 +81,7 @@ const HomePage = () => {
                 <FormSection setSubjectForm={setSubjectForm} subjectForm={subjectForm} />
             </Section>
             {/* Footer */}
-            <FooterSection />
+            <FooterSection bgColor={darkBgSection} />
         </>
     )
 }
