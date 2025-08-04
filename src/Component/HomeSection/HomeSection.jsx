@@ -1,7 +1,6 @@
 import TelegramIcon from '@mui/icons-material/Telegram';
-import InstagramIcon from '@mui/icons-material/Instagram';
-import WhatsAppIcon from '@mui/icons-material/WhatsApp';
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import { FiGithub } from "react-icons/fi";
+
 import { Link } from 'react-scroll';
 
 const HomeSection = ({children , setSubjectForm}) => {
@@ -14,11 +13,9 @@ const HomeSection = ({children , setSubjectForm}) => {
                     <p className='text-xl leading-10 md:leading-8 '>سلام من <br/>
                     سجاد انجیدنی هستم</p>
                     <h3 className='text-2xl text-themColor'>برنامه نویس فرانت اند</h3>
-                    <div className='flex gap-9 mt-2'>
-                        <TelegramIcon className='text-themColor hover:text-customeWhite hover:cursor-pointer child:duration-500' style={{width : '40px' , height : '40px'}}/>
-                        <InstagramIcon className='text-themColor hover:text-customeWhite hover:cursor-pointer child:duration-500' style={{width : '40px' , height : '40px'}}/>
-                        <WhatsAppIcon className='text-themColor hover:text-customeWhite hover:cursor-pointer child:duration-500' style={{width : '40px' , height : '40px'}}/>
-                        <LinkedInIcon className='text-themColor hover:text-customeWhite hover:cursor-pointer child:duration-500' style={{width : '40px' , height : '40px'}}/>
+                    <div className='flex items-center gap-6 mt-2'>
+                        <a href='https://github.com/sajadanjidani/'><FiGithub className='text-themColor hover:text-customeWhite hover:cursor-pointer child:duration-500' style={{width : '33px' , height : '33px'}}/></a>
+                        <a href='https://t.me/sajadanjiidanii'><TelegramIcon className='text-themColor hover:text-customeWhite hover:cursor-pointer child:duration-500' style={{width : '40px' , height : '40px'}}/></a>
                     </div>
                     <Link onClick={() => setSubjectForm('درخواست همکاری')} className='inline text-center w-72 py-2 mt-3 border-2 cursor-pointer rounded-lg text-themColor border-themColor hover:text-darkBgSection hover:bg-themColor duration-500' to='Contact' smooth={true} duration={1600}>درخواست همکاری</Link>
                 </div>

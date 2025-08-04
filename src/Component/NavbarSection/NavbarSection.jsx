@@ -5,9 +5,22 @@ import { Link } from 'react-scroll';
 const NavbarSection = ({setSubjectForm}) => {
 
     const [menuStatus , setMenuStatus] = useState(false)
+    const [animateMenu , setAnimateMenu] = useState('animate-OpenMenu')
+    const [animateCover , setAnimateCover] = useState('animate-OpenCover')
 
     const toggleMenu = () => {
-        setMenuStatus(prveStatus => !prveStatus)
+        if(menuStatus){
+            setAnimateMenu('animate-CloseMenu')
+            setAnimateCover('animate-CloseCover')
+            setTimeout(() => {
+                setMenuStatus(prveStatus => !prveStatus)
+            } , 2000)
+        }else{
+            setAnimateMenu('animate-OpenMenu')
+            setAnimateCover('animate-OpenCover')
+            setMenuStatus(prveStatus => !prveStatus)
+        }
+        
     }
 
     return(
@@ -27,7 +40,7 @@ const NavbarSection = ({setSubjectForm}) => {
             {/* menu mobile */}
             {menuStatus ? (
                 <div className='fixed w-full h-full top-0 right-0 z-50'>
-                    <div className='absolute w-3/5 h-full top-0 right-0 py-8 px-7 bg-darkBgSection'>
+                    <div className={`absolute w-3/5 h-full top-0 right-0 py-8 px-7 bg-darkBgSection ${animateMenu}`}>
                         <ul className="grid gap-5 text-customeWhite child-hover:cursor-pointer child-hover:text-themColor child:text-lg child:duration-500">
                             <li><Link to='Home' smooth={true} duration={500}>خانه</Link></li>
                             <li><Link to='Skills' smooth={true} duration={1000}>مهارت</Link></li>
@@ -37,7 +50,7 @@ const NavbarSection = ({setSubjectForm}) => {
                             <li><Link to='AboutMe' smooth={true} duration={800}>درباره من</Link></li>
                         </ul>
                     </div>
-                    <div onClick={() => toggleMenu()} className='absolute w-2/5 h-full top-0 left-0 opacity-80 bg-lightBgSection'></div>
+                    <div onClick={() => toggleMenu()} className={`absolute w-2/5 h-full top-0 left-0 opacity-80 bg-lightBgSection ${animateCover}`}></div>
                 </div>
             ) : ''}
         </div>

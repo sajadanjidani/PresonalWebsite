@@ -1,7 +1,5 @@
 import TelegramIcon from '@mui/icons-material/Telegram';
-import InstagramIcon from '@mui/icons-material/Instagram';
-import WhatsAppIcon from '@mui/icons-material/WhatsApp';
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import { FiGithub } from "react-icons/fi";
 import { FiPhone } from "react-icons/fi";
 import { MdOutlineMail } from "react-icons/md";
 import { Link } from 'react-scroll';
@@ -20,12 +18,10 @@ const FooterSection = () => {
                     <li><Link to='Contact' smooth={true} duration={500}>ارتباط</Link></li>
                 </ul>
                 <ul className='flex mt-10 gap-10 justify-center'>
-                    <li><TelegramIcon className='text-themColor hover:text-customeWhite cursor-pointer child:duration-500' style={{width : '40px', height : '40px'}}/></li>
-                    <li><InstagramIcon className='text-themColor hover:text-customeWhite cursor-pointer child:duration-500' style={{width : '40px', height : '40px'}}/></li>
-                    <li><WhatsAppIcon className='text-themColor hover:text-customeWhite cursor-pointer child:duration-500' style={{width : '40px', height : '40px'}}/></li>
-                    <li><LinkedInIcon className='text-themColor hover:text-customeWhite cursor-pointer child:duration-500' style={{width : '40px', height : '40px'}}/></li>
+                    <li><a href='https://github.com/sajadanjidani/'><FiGithub className='text-themColor hover:text-customeWhite cursor-pointer child:duration-500' style={{width : '40px', height : '40px'}}/></a></li>
+                    <li><a href="https://t.me/sajadanjiidanii"><TelegramIcon className='text-themColor hover:text-customeWhite cursor-pointer child:duration-500' style={{width : '45px', height : '45px'}}/></a></li>
                 </ul>
-                <ul className='grid md:flex mt-10 justify-center gap-5 md:gap-10 child:text-customeWhite child-hover:text-themColor'>
+                <ul className='grid md:flex mt-8 justify-center gap-5 md:gap-10 child:text-customeWhite child-hover:text-themColor'>
                     <li dir='ltr' className='flex gap-1 cursor-pointer child:duration-500'><FiPhone /> +98 993 689 3100</li>
                     <li className='flex gap-1 cursor-pointer rtl md:ltr child:duration-500'><MdOutlineMail />SajadAnjiidanii@gmail.com</li>
                 </ul>
