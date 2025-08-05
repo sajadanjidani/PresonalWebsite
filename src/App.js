@@ -8,7 +8,6 @@ function App() {
     <>
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/Portfolio" element={<PortfolioPage />} />
         <Route path="/Portfolio/:portfolioId" element={<PortfolioPage />} />
       </Routes>
     </>
