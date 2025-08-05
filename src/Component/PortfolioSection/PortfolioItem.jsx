@@ -5,9 +5,15 @@ import { Link } from "react-router-dom";
 
 const PortfolioItem = ({ id , imageSrc, title, customeClass, status }) => {
   const [isVisible, setIsVisible] = useState(false);
+  let address = ''
+  if(status){
+    address = `/Portfolio/${id}`
+  }else{
+    address = `/`
+  }
 
   return (
-    <Link to={`/Portfolio/${id}`}>
+    <Link to={address}>
       <motion.div
         onViewportEnter={() => setIsVisible(true)}
         viewport={{ once: true, amount: 0.3 }}

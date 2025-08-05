@@ -15,16 +15,16 @@ const skillInfos = [
 const serviceInfos = [
     {id : 1 , title : 'دیباگ سایت' , customeClass : 'animate-rtl' , description : 'آیا سایتتون با مشکل روبروه؟ ارورهای عجیب و غریب، صفحات سفید، یا سرعت پایین کلافه‌تون کرده؟ نگران نباشید! من اینجام تا مشکل سایتتون رو پیدا کنم و مثل یه جراح ماهر، خطاهای کدتون رو برطرف کنم. با دیباگ حرفه‌ای، سایتتون رو به بهترین شکل ممکن اجرا کنید و تجربه کاربری بی‌نظیری رو برای بازدیدکنندگانتون فراهم کنید. ' , icon : <HiBugAnt />},
     {id : 2 , title : 'توسعه سایت' , customeClass : 'animate-btu' , description : 'از سایت‌های فروشگاهی شیک و مدرن تا وبلاگ‌های جذاب و پرمحتوا، من هر نوع سایتی رو که تصورش رو بکنید، می‌تونم براتون طراحی و توسعه بدم. کافیه ایده‌تون رو با من در میون بذارید، و من با استفاده از آخرین تکنولوژی‌های روز دنیا، یه سایت بی‌نظیر و کاربرپسند براتون خلق می‌کنم. ' , icon : <FaCode />},
-    {id : 3 , title : 'بازتوسعه سایت' , customeClass : 'animate-ltr' , description : 'یه سایت آماده دارید که دیگه قدیمی شده و نیاز به تغییر داره؟ یا می‌خواید امکانات جدیدی بهش اضافه کنید؟ من می‌تونم سایتتون رو از نو بسازم و با یه طراحی مدرن و جذاب، و امکانات پیشرفته، یه سایت کاملاً جدید و منطبق با نیازهای روزتون تحویلتون بدم. ' , icon : <FaPencilAlt />}
+    {id : 3 , title : 'بازتوسعه سایت' , customeClass : 'animate-OpenCover' , description : 'یه سایت آماده دارید که دیگه قدیمی شده و نیاز به تغییر داره؟ یا می‌خواید امکانات جدیدی بهش اضافه کنید؟ من می‌تونم سایتتون رو از نو بسازم و با یه طراحی مدرن و جذاب، و امکانات پیشرفته، یه سایت کاملاً جدید و منطبق با نیازهای روزتون تحویلتون بدم. ' , icon : <FaPencilAlt />}
 ]
 
 const portfolioInfos = [
     {id : 1 , title : 'GreenWeb' , imageSrc : '/image/myPortfolio/greenweb.jpg' , customeClass : 'animate-rtl' , stutus : true , LP : '/video/greenWeb/LP.mp4' , TB : '/video/greenWeb/TB.mp4' , MB : '/video/greenWeb/MB.mp4'},
-    {id : 2 , title : 'NewsPersion' , imageSrc : '/image/myPortfolio/greenweb.jpg' , customeClass : 'animate-utb' , stutus : true , LP : '/video/newsPersion/LP.mp4' , TB : '/video/newsPersion/TB.mp4' , MB : '/video/newsPersion/MB.mp4'},
-    {id : 3 , title : 'TvRepairs' , imageSrc : '/image/myPortfolio/greenweb.jpg' , customeClass : 'animate-ltr' , stutus : true , LP : '/video/tvRepairs/LP.mp4' , TB : '/video/tvRepairs/TB.mp4' , MB : '/video/tvRepairs/MB.mp4'},
-    {id : 4 , title : 'TvRepairs2' , imageSrc : '/image/myPortfolio/greenweb.jpg' , customeClass : 'animate-rtl' , stutus : true , LP : '/video/tvRepairs2/LP.mp4' , TB : '/video/tvRepairs2/TB.mp4' , MB : '/video/tvRepairs2/MB.mp4'},
-    {id : 5 , title : 'technologyShop' , imageSrc : '/image/myPortfolio/greenweb.jpg' , customeClass : 'animate-btu' , stutus : true , LP : '/video/tecnologeyShop/LP.mp4' , TB : '/video/tecnologeyShop/TB.mp4' , MB : '/video/tecnologeyShop/MB.mp4'},
-    {id : 6 , title : 'GreenWeb' , imageSrc : '/image/myPortfolio/greenweb.jpg' , customeClass : 'animate-ltr' , stutus : false},
+    {id : 2 , title : 'NewsPersion' , imageSrc : '/image/myPortfolio/newspersion.png' , customeClass : 'animate-utb' , stutus : true , LP : '/video/newsPersion/LP.mp4' , TB : '/video/newsPersion/TB.mp4' , MB : '/video/newsPersion/MB.mp4'},
+    {id : 3 , title : 'TvRepairs' , imageSrc : '/image/myPortfolio/tvreaper1.png' , customeClass : 'animate-OpenCover' , stutus : true , LP : '/video/tvRepairs/LP.mp4' , TB : '/video/tvRepairs/TB.mp4' , MB : '/video/tvRepairs/MB.mp4'},
+    {id : 4 , title : 'TvRepairs2' , imageSrc : '/image/myPortfolio/tvreaper2.png' , customeClass : 'animate-rtl' , stutus : true , LP : '/video/tvRepairs2/LP.mp4' , TB : '/video/tvRepairs2/TB.mp4' , MB : '/video/tvRepairs2/MB.mp4'},
+    {id : 5 , title : 'technologyShop' , imageSrc : '/image/myPortfolio/technologyshop.png' , customeClass : 'animate-btu' , stutus : true , LP : '/video/tecnologeyShop/LP.mp4' , TB : '/video/tecnologeyShop/TB.mp4' , MB : '/video/tecnologeyShop/MB.mp4'},
+    {id : 6 , title : 'GreenWeb' , imageSrc : '/image/myPortfolio/greenweb.jpg' , customeClass : 'animate-OpenCover' , stutus : false},
 ]
 
 let subjectForm = ''

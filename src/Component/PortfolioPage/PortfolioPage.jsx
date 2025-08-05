@@ -5,6 +5,7 @@ import { portfolioInfos } from './../../data'
 import { IoIosArrowBack } from "react-icons/io";
 // import Component
 import Section from "../Section/Section"
+import WatchPortfolio from "../WatchPortfolio/WatchPortfolio";
 
 const PortfolioPage = () => {
 
@@ -21,26 +22,9 @@ const PortfolioPage = () => {
                     <Link to='/' className="block lg:hidden text-lightBgSection hover:text-themColor cursor-pointer duration-500"><IoIosArrowBack className="size-7"/></Link>
                 </div>
                 <div className="grid items-center justify-items-center grid-cols-1 lg:grid-cols-3 gap-10 lg:gap-2 w-full h-full py-10 lg:py-20">
-                    <a href={`${portfolio[index].LP}`}>
-                        <div className="grid w-full">
-                            <span className="block text-center mb-5">سایز لپتاپ و مانیتور</span>
-                            <div className="w-[90%] lg:w-96 h-48 lg:h-52 mx-auto rounded-lg brightness-90 hover:brightness-100 cursor-pointer overflow-hidden bg-darkBgSection">
-                                <img src={portfolio[param.portfolioId].imageSrc}/>
-                            </div>
-                        </div>
-                    </a>
-                    <div className="grid w-full">
-                        <span className="block text-center mb-5">سایز تبلت</span>
-                        <div className="w-[90%] lg:w-96 h-48 lg:h-52 mx-auto rounded-lg brightness-90 hover:brightness-100 cursor-pointer overflow-hidden bg-darkBgSection">
-                            <img src={portfolio[param.portfolioId].imageSrc}/>
-                        </div>
-                    </div>
-                    <div className="grid w-full">
-                        <span className="block text-center mb-5">سایز موبایل</span>
-                        <div className="w-[90%] lg:w-96 h-48 lg:h-52 mx-auto rounded-lg brightness-90 hover:brightness-100 cursor-pointer overflow-hidden bg-darkBgSection">
-                            <img src={portfolio[param.portfolioId].imageSrc}/>
-                        </div>
-                    </div>
+                    <WatchPortfolio videoAddress={portfolio[index].LP} size='سایز لپتاپ و مانیتور' imageAddress={portfolio[index].imageSrc} />
+                    <WatchPortfolio videoAddress={portfolio[index].TB} size='سایز تبلت' imageAddress={portfolio[index].imageSrc} />
+                    <WatchPortfolio videoAddress={portfolio[index].MB} size='سایز موبایل' imageAddress={portfolio[index].imageSrc} />
                 </div>
             </Section>
         </>

@@ -39,7 +39,6 @@ module.exports = {
         btu: "btu 2s ease",
         rtl: "rtl 2s ease",
         ltr: "ltr 2s ease",
-        onoff: "onoff 3s ease",
       },
       keyframes: {
         Skills90: {
@@ -73,10 +72,6 @@ module.exports = {
         CloseCover: {
           "0%": { transform: "translateX(0%)" },
           "100%": { transform: "translateX(-100%)" },
-        },
-        onoff: {
-          "0%": { opacity: "0" },
-          "100%": { opacity: "100" },
         },
         utb: {
           "0%": { transform: "translateY(-200%)" },
