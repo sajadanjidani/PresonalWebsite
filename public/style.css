@@ -685,6 +685,22 @@ video {
   top: 0px;
 }
 
+.bottom-0 {
+  bottom: 0px;
+}
+
+.bottom-10 {
+  bottom: 2.5rem;
+}
+
+.bottom-20 {
+  bottom: 5rem;
+}
+
+.-bottom-10 {
+  bottom: -2.5rem;
+}
+
 .z-50 {
   z-index: 50;
 }
@@ -944,6 +960,10 @@ video {
 }
 
 .w-full {
+  width: 100%;
+}
+
+.w-\[100\%\] {
   width: 100%;
 }
 
@@ -1752,6 +1772,10 @@ video {
 
   .lg\:w-\[94\%\] {
     width: 94%;
+  }
+
+  .lg\:w-10\/12 {
+    width: 83.333333%;
   }
 
   .lg\:grid-cols-2 {

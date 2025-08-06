@@ -23,12 +23,9 @@ const AboutSection = () => {
   }, [inView, visibleLength]);
 
   return (
-    <div className="grid lg:flex h-full lg:mx-12 my-6" ref={ref}>
-      {/* imagebox */}
-      <div className="hidden lg:block w-80 h-5/6 mt-12 mr-20 rounded-t-full bg-darkBgSection order-2 lg:order-1"></div>
-
+    <div className="flex h-full lg:mx-12 my-6" ref={ref}>
       {/* contentbox */}
-      <div className="w-[90%] lg:w-8/12 h-fit lg:mt-20 mx-auto lg:mr-20 pb-8 px-8 rounded-xl bg-darkBgSection order-1 lg:order-2">
+      <div className="w-[90%] lg:w-10/12 h-fit lg:mt-20 mx-auto lg:mr-20 pb-8 px-8 rounded-xl bg-darkBgSection order-1 lg:order-2">
         <p className="text-customeWhite text-justify whitespace-pre-line leading-8">
           {cleanedText.slice(0, visibleLength)}
         </p>
